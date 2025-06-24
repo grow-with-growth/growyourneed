@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" modified="2024-06-01T12:00:00.000Z" agent="5.0 (Windows)" etag="123456" version="20.1.5" type="device">
+  <diagram id="project_overview" name="Project Overview">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- Title -->
+        <mxCell id="2" value="Grow Your Need - Project Overview" style="text;html=1;fontSize=24;fontColor=#1a237e;fontStyle=1;align=center;verticalAlign=middle;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="200" y="20" width="400" height="40" as="geometry"/>
+        </mxCell>
+
+        <!-- Technology Stack -->
+        <mxCell id="3" value="Technology Stack" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e3f2fd;strokeColor=#1a237e;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="80" width="200" height="140" as="geometry"/>
+        </mxCell>
+        <mxCell id="4" value="Frontend: React, Vite, TypeScript&#xa;Backend: Optional API (Node.js or other)&#xa;Mobile Apps: Android &amp; iOS (native or cross-platform)&#xa;APIs: TMDB, Jikan, Custom Backend&#xa;Testing: Jest, React Testing Library" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;fontSize=12;" vertex="1" parent="3">
+          <mxGeometry x="10" y="10" width="180" height="120" as="geometry"/>
+        </mxCell>
+
+        <!-- Folder Structure -->
+        <mxCell id="5" value="Folder Structure" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fce4ec;strokeColor=#880e4f;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="80" width="300" height="220" as="geometry"/>
+        </mxCell>
+        <mxCell id="6" value="api/ (Backend API code - optional)&#xa;components/ (React components by module)&#xa;mobile/ (Mobile app source)&#xa;public/ (Static assets)&#xa;dist-server/ (Compiled backend)&#xa;config files (jest, vite, package.json, etc.)" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;fontSize=12;" vertex="1" parent="5">
+          <mxGeometry x="10" y="10" width="280" height="200" as="geometry"/>
+        </mxCell>
+
+        <!-- Components Modules -->
+        <mxCell id="7" value="Components Modules" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f5e9;strokeColor=#2e7d32;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="560" y="80" width="280" height="300" as="geometry"/>
+        </mxCell>
+        <mxCell id="8" value="media, school, teacher, marketing, finance, student, parent, analytics, academics, lifestyle, design, email, contact" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;fontSize=12;" vertex="1" parent="7">
+          <mxGeometry x="10" y="10" width="260" height="280" as="geometry"/>
+        </mxCell>
+
+        <!-- Dashboards Group -->
+        <mxCell id="9" value="Dashboards by Role" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff3e0;strokeColor=#ef6c00;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="240" width="820" height="400" as="geometry"/>
+        </mxCell>
+
+        <!-- Individual Dashboards -->
+        <mxCell id="10" value="Student Dashboard" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffecb3;strokeColor=#fbc02d;fontSize=12;fontStyle=1;" vertex="1" parent="9">
+          <mxGeometry x="30" y="260" width="180" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="11" value="Parent Dashboard" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffecb3;strokeColor=#fbc02d;fontSize=12;fontStyle=1;" vertex="1" parent="9">
+          <mxGeometry x="230" y="260" width="180" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="12" value="Teacher Dashboard" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffecb3;strokeColor=#fbc02d;fontSize=12;fontStyle=1;" vertex="1" parent="9">
+          <mxGeometry x="430" y="260" width="180" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="13" value="Admin Dashboard" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffecb3;strokeColor=#fbc02d;fontSize=12;fontStyle=1;" vertex="1" parent="9">
+          <mxGeometry x="630" y="260" width="180" height="80" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="14" value="Director / Leadership Dashboard" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe0b2;strokeColor=#fb8c00;fontSize=12;fontStyle=1;" vertex="1" parent="9">
+          <mxGeometry x="30" y="360" width="180" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="15" value="Finance Dashboard" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe0b2;strokeColor=#fb8c00;fontSize=12;fontStyle=1;" vertex="1" parent="9">
+          <mxGeometry x="230" y="360" width="180" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="16" value="Marketing & Enrollment Dashboard" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe0b2;strokeColor=#fb8c00;fontSize=12;fontStyle=1;" vertex="1" parent="9">
+          <mxGeometry x="430" y="360" width="180" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="17" value="Operations Dashboard" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe0b2;strokeColor=#fb8c00;fontSize=12;fontStyle=1;" vertex="1" parent="9">
+          <mxGeometry x="630" y="360" width="180" height="80" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="18" value="Owner / Investor Dashboard" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffcdd2;strokeColor=#e53935;fontSize=12;fontStyle=1;" vertex="1" parent="9">
+          <mxGeometry x="330" y="460" width="180" height="80" as="geometry"/>
+        </mxCell>
+
+        <!-- Key Features -->
+        <mxCell id="19" value="Key Features" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ede7f6;strokeColor=#5e35b1;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="660" width="820" height="140" as="geometry"/>
+        </mxCell>
+        <mxCell id="20" value="Multi-User SaaS Platform&#xa;School Management&#xa;Teacher Dashboard&#xa;Marketing Dashboard&#xa;Finance Dashboard&#xa;Student &amp; Parent Portals&#xa;Media Dashboard&#xa;Analytics &amp; Reporting&#xa;Modular &amp; Extensible&#xa;Responsive Design&#xa;Robust Testing" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;fontSize=12;" vertex="1" parent="19">
+          <mxGeometry x="10" y="10" width="800" height="120" as="geometry"/>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

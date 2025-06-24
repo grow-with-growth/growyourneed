@@ -1,0 +1,95 @@
+@startuml
+title Grow Your Need - Full Flow Diagram
+
+actor School
+actor Teacher
+actor MarketingTeam
+actor FinanceDepartment
+actor Student
+actor Parent
+actor Admin
+actor Director
+actor OwnerInvestor
+actor System
+
+rectangle "Grow Your Need SaaS Platform" {
+
+  rectangle "Web & Mobile Interfaces" {
+    rectangle "School Dashboard" as SchoolDashboard
+    rectangle "Teacher Dashboard" as TeacherDashboard
+    rectangle "Marketing Dashboard" as MarketingDashboard
+    rectangle "Finance Dashboard" as FinanceDashboard
+    rectangle "Student Portal" as StudentPortal
+    rectangle "Parent Portal" as ParentPortal
+    rectangle "Media Dashboard" as MediaDashboard
+    rectangle "Analytics & Reporting" as AnalyticsReporting
+    rectangle "Admin Dashboard" as AdminDashboard
+    rectangle "Director / Leadership Dashboard" as DirectorDashboard
+    rectangle "Owner / Investor Dashboard" as OwnerDashboard
+    rectangle "Operations Dashboard" as OperationsDashboard
+    rectangle "Curriculum Marketplace & Repository" as CurriculumMarketplace
+    rectangle "Library / Media Center Hub" as LibraryMediaCenter
+    rectangle "Extracurricular & Athletics Management" as ExtracurricularManagement
+    rectangle "Community Engagement & Partnership Portal" as CommunityEngagement
+  }
+
+  rectangle "Backend APIs" as BackendAPIs {
+    rectangle "School Management API"
+    rectangle "Teacher API"
+    rectangle "Marketing API"
+    rectangle "Finance API"
+    rectangle "Student API"
+    rectangle "Parent API"
+    rectangle "Media API (TMDB, Jikan)"
+    rectangle "Analytics API"
+    rectangle "Admin API"
+    rectangle "Operations API"
+    rectangle "User Management & Auth API"
+  }
+
+  rectangle "System-Wide Features" {
+    rectangle "AI Chatbot Coach"
+    rectangle "Dashboard Customizer"
+    rectangle "Plugin Store / App Marketplace"
+    rectangle "Notifications Engine"
+    rectangle "Data Warehousing & BI"
+    rectangle "Security & Privacy"
+    rectangle "Identity Management & SSO"
+    rectangle "Blockchain Credentialing (Optional)"
+  }
+}
+
+' User interactions
+School --> SchoolDashboard
+Teacher --> TeacherDashboard
+MarketingTeam --> MarketingDashboard
+FinanceDepartment --> FinanceDashboard
+Student --> StudentPortal
+Parent --> ParentPortal
+Admin --> AdminDashboard
+Director --> DirectorDashboard
+OwnerInvestor --> OwnerDashboard
+System --> OperationsDashboard
+
+' Dashboards interact with backend APIs
+SchoolDashboard --> BackendAPIs
+TeacherDashboard --> BackendAPIs
+MarketingDashboard --> BackendAPIs
+FinanceDashboard --> BackendAPIs
+StudentPortal --> BackendAPIs
+ParentPortal --> BackendAPIs
+MediaDashboard --> BackendAPIs
+AnalyticsReporting --> BackendAPIs
+AdminDashboard --> BackendAPIs
+DirectorDashboard --> BackendAPIs
+OwnerDashboard --> BackendAPIs
+OperationsDashboard --> BackendAPIs
+CurriculumMarketplace --> BackendAPIs
+LibraryMediaCenter --> BackendAPIs
+ExtracurricularManagement --> BackendAPIs
+CommunityEngagement --> BackendAPIs
+
+' Backend APIs interact with system-wide features
+BackendAPIs --> System-Wide Features
+
+@enduml

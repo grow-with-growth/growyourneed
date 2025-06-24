@@ -1,0 +1,23 @@
+{
+  "name": "torrent-stream-cinema",
+  "version": "1.0.0",
+  "description": "Real torrent streaming with WebTorrent + FFmpeg",
+  "main": "torrent-stream-server.js",
+  "scripts": {
+    "start": "node torrent-stream-server.js",
+    "dev": "nodemon torrent-stream-server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "axios": "^1.6.2",
+    "webtorrent": "^2.1.0",
+    "fluent-ffmpeg": "^2.1.2",
+    "cheerio": "^1.0.0-rc.12"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  },
+  "keywords": ["torrent", "streaming", "webtorrent", "ffmpeg", "movies", "tv"],
+  "author": "Torrent Stream Cinema",
+  "license": "MIT"
+}

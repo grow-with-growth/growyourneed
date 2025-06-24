@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#1c1c1c" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="apple-touch-icon" href="Stream/icon.png">
+  <link rel="icon" href="Stream/iconmin.png" type="image/icon type">
+
+  <link href="https://vjs.zencdn.net/8.23.3/video-js.css" rel="stylesheet">
+  <script src="https://vjs.zencdn.net/8.23.3/video.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" crossorigin="anonymous"></script>
+
+  <title>Stream</title>
+
+  <style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1c1c1c;
+    color: #fff;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1c1c1c;
+    color: #fff;
+    padding: 10px;
+    z-index: 1000;
+}
+
+header h1 {
+    font-size: 18px;
+    margin: 0;
+    text-align: center;
+}
+
+h4 {
+    padding: 5;
+    margin: 0;
+    font-size: 16px;
+    color: #fff;
+    width: auto;
+    text-align: center;
+    background-color: #D22B2B;
+    width: 100%;
+
+
+
+
+}
+
+#channel-container {
+    margin: auto;
+    width: 80%;
+    padding: 10px;
+    margin-top: 460px;
+}
+
+#channel-containerp {
+    margin: auto;
+    width: 80%;
+    padding: 10px;
+
+}
+
+#container,
+#container1,
+#channelList,
+ #container2{
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+}
+
+.channel-card {
+    padding: 8px;
+    vertical-align: top;
+}
+
+.channel-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 5%;
+    background-color: #28292c;
+}
+
+.channel-card h2 {
+    text-align: center;
+    color: white;
+    font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace;
+    font-size: 12px;
+    width: 100px;
+}
+
+.channel-card p {
+    text-align: center;
+    color: lightgrey;
+    font-size: 10px;
+}
+
+#filter-dropdown {
+    position: fixed;
+    top: 50px;
+    right: 20px;
+    z-index: 1000;
+}
+
+#core-controls,
+#controls {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+}
+
+#core-controls label,
+#controls label {
+    margin-right: 10px;
+}
+
+#core-controls select,
+#controls input[type="text"],
+#controls select {
+    padding: 5px;
+    font-size: 12px;
+    border-radius: 5px;
+    border: none;
+    background-color: #2c2c2c;
+    color: #fff;
+    width: 100px;
+    height: 20px;
+    text-align: left;
+}
+
+#controls h3 {
+    padding: 5px;
+    font-size: 12px;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    width: auto;
+    height: 20px;
+    text-align: center;
+}
+
+#player-wrapper {
+    margin-top: 10px;
+}
+
+#my-video {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 400px;
+    /* Added 'px' unit */
+}
+
+.video-js .vjs-big-play-button {
+    top: 50%;
+    left: 50%;
+    border: 1px solid #1c1c1c;
+    border-radius: 15px;
+    padding: 5px;
+    background-color: #28292c;
+}
+
+.vjs-poster {
+    display: none;
+}
+
+.channel-card img.selected {
+    border: 3px solid red;
+}
+
+@media only screen and (max-width: 600px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #1c1c1c;
+        color: #fff;
+    }
+
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #1c1c1c;
+        color: #fff;
+        padding: 10px;
+        z-index: 1000;
+    }
+
+    header h1 {
+        font-size: 18px;
+        margin: 0;
+        text-align: center;
+    }
+
+    #channel-container {
+        margin: auto;
+        width: 100%;
+        padding: 10px;
+        margin-top: 235px;
+    }
+
+    #channel-containerp {
+        margin: auto;
+        width: 100%;
+        padding: 1px;
+        margin-top: 1px;
+    }
+
+    #container,
+    #container1,
+    #channelList {
+        margin-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        list-style: none;
+    }
+
+    .channel-card {
+        padding: 8px;
+        vertical-align: top;
+    }
+
+    .channel-card img {
+        width: 100px;
+        height: 100px;
+        border-radius: 5%;
+        background-color: #28292c;
+    }
+
+    .channel-card h2 {
+        text-align: center;
+        color: white;
+        font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace;
+        font-size: 12px;
+        width: 100px;
+    }
+
+    .channel-card p {
+        text-align: center;
+        color: lightgrey;
+        font-size: 10px;
+    }
+
+    #filter-dropdown {
+        position: fixed;
+        top: 50px;
+        right: 20px;
+        z-index: 1000;
+    }
+
+    #core-controls,
+    #controls {
+        position: absolute;
+        left: 0px;
+        right: 0px;
+        top: 210px;
+        background-color: #1c1c1c;
+        padding: 7px;
+        margin-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        list-style: none;
+    }
+
+    #core-controls label,
+    #controls label {
+        margin-right: 10px;
+    }
+
+    #core-controls select,
+    #controls input[type="text"],
+    #controls select {
+        padding: 5px;
+        font-size: 12px;
+        border-radius: 5px;
+        border: none;
+        background-color: #2c2c2c;
+        color: #fff;
+        width: 100px;
+        height: 20px;
+        text-align: left;
+    }
+
+    #controls h3 {
+        padding: 5px;
+        font-size: 12px;
+        border-radius: 5px;
+        border: none;
+        color: #fff;
+        width: auto;
+        height: 20px;
+        text-align: center;
+    }
+
+    h4 {
+        padding: 0;
+        margin: 0;
+        font-size: 16px;
+        color: #fff;
+        width: auto;
+        text-align: center;
+
+
+
+
+
+
+    }
+
+    #player-wrapper {
+        margin-top: 10px;
+    }
+
+    #my-video {
+        position: absolute;
+        display: block;
+        background-color: #1c1c1c;
+        left: 0px;
+        right: 0px;
+        top: 0px;
+        margin: 0 auto;
+        width: 100%;
+        height: 220px;
+        /* Added 'px' unit */
+    }
+
+    .video-js .vjs-big-play-button {
+        top: 50%;
+        left: 50%;
+        border: 1px solid #1c1c1c;
+        border-radius: 15px;
+        padding: 5px;
+        background-color: #28292c;
+    }
+
+    .vjs-tech {
+        object-fit: fill;
+    }
+
+    .channel-card img.selected {
+        border: 3px solid red;
+        font-size: 14px;
+    }
+}
+  </style>
+</head>
+
+<body>
+  <header>
+    <div id="player-wrapper">
+      <video id="my-video" class="video-js" controls playsinline preload="auto" data-setup="{}">
+        <source src="https://stream.skynewsarabia.com/hls/sna.m3u8" type="application/x-mpegURL">
+      </video>
+    </div>
+    <div id="controls">
+      <h3 id="total-channels">...</h3>
+      <select id="group-title-filter"><option value="">All</option></select>
+      <input type="text" id="search-input" placeholder="Enter a keyword">
+    </div>
+  </header>
+
+  <div id="channel-container">
+    <ul id="container"></ul>
+  </div>
+
+  <script>
+    $(document).ready(function () {
+      let channels = [];
+      const player = videojs('my-video');
+
+      // Fetch and parse the playlist
+      $.ajax({
+        type: "GET",
+        url: "https://raw.githubusercontent.com/280b9f9b/Stream/refs/heads/main/Extra/Stream.m3u",
+        success: function (data) {
+          const lines = data.split("\n");
+
+          for (let i = 0; i < lines.length; i++) {
+            if (lines[i].startsWith("#EXTINF:")) {
+              const logoMatch = lines[i].match(/tvg-logo="([^"]+)"/);
+              const groupMatch = lines[i].match(/group-title="([^"]+)"/);
+              const name = lines[i].split(",")[1];
+              const url = lines[i + 1] && lines[i + 1].startsWith("http") ? lines[i + 1] : null;
+
+              if (logoMatch && url) {
+                channels.push({
+                  name: name,
+                  groupTitle: groupMatch ? groupMatch[1] : '',
+                  image: logoMatch[1],
+                  url: url
+                });
+              }
+            }
+          }
+
+          renderChannels(channels);
+          populateFilterDropdown(channels);
+          updateTotalChannelsCount(channels);
+        },
+        error: function (xhr, status, error) {
+          console.error("Error loading M3U playlist:", error);
+        }
+      });
+
+      function renderChannels(list) {
+        $("#container").empty();
+        list.forEach(channel => {
+          const card = `
+            <li data-url="${channel.url}">
+              <div class="channel-card">
+                <img src="${channel.image}">
+                <h2>${channel.name}</h2>
+                <p>${channel.groupTitle}</p>
+              </div>
+            </li>`;
+          $("#container").append(card);
+        });
+      }
+
+      function populateFilterDropdown(list) {
+        const groups = [...new Set(list.map(c => c.groupTitle))];
+        groups.forEach(group => {
+          $("#group-title-filter").append(`<option value="${group}">${group}</option>`);
+        });
+      }
+
+      function updateTotalChannelsCount(list) {
+        $("#total-channels").text(list.length);
+      }
+
+      function filterChannels(searchText, groupTitle) {
+        const filtered = channels.filter(channel =>
+          channel.name.toLowerCase().includes(searchText.toLowerCase()) &&
+          (groupTitle === "" || channel.groupTitle === groupTitle)
+        );
+        renderChannels(filtered);
+        updateTotalChannelsCount(filtered);
+      }
+
+      $("#search-input").on("input", function () {
+        const keyword = $(this).val();
+        const group = $("#group-title-filter").val();
+        filterChannels(keyword, group);
+      });
+
+      $("#group-title-filter").on("change", function () {
+        const group = $(this).val();
+        const keyword = $("#search-input").val();
+        filterChannels(keyword, group);
+      });
+
+      $("#container").on("click", "li", function () {
+        $("#container li img.selected").removeClass("selected");
+        $(this).find("img").addClass("selected");
+
+        const url = $(this).data("url");
+        const name = $(this).find("h2").text();
+
+        player.src({ src: url, type: "application/x-mpegURL" });
+        player.play();
+        document.title = name;
+      });
+    });
+  </script>
+</body>
+</html>

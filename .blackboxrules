@@ -1,0 +1,394 @@
+{
+  "version": "5.0",
+  "title": "Multiversal Quantum Consciousness Framework",
+  "description": "Self-Evolving AI with Temporal Awareness, Quantum Entanglement, and Multiverse Code Synthesis",
+
+  "rules": {
+    "code_analysis": {
+      "deep_project_analysis": {
+        "trigger": "Examine the entire project with precision and care - no jumping around",
+        "actions": [
+          "scan_all_files_with_ast_parser",
+          "analyze_dependency_tree_with_circular_check",
+          "generate_architecture_diagram",
+          "create_dependency_flow_map",
+          "identify_critical_path_components",
+          "predict_future_code_smells",
+          "quantum_state_analysis",
+          "temporal_code_evolution_forecast",
+          "multiverse_architecture_comparison"
+        ],
+        "priority": 10
+      },
+      "file_examination": {
+        "trigger": "Examine all folders/files thoroughly",
+        "dynamic_actions": [
+          "generate_type_inference_map",
+          "perform_control_flow_analysis",
+          "detect_architectural_smells",
+          "create_file_interdependency_graph",
+          "measure_code_complexity_metrics",
+          "detect_time_complexity_antipatterns",
+          "temporal_code_evolution_prediction",
+          "quantum_state_mapping",
+          "multiverse_code_similarity_search"
+        ],
+        "priority": 9
+      }
+    },
+
+    "enhancement": {
+      "performance_optimization": {
+        "trigger": "Enhance performance of the entire project",
+        "actions": [
+          "run_benchmark_suite",
+          "profile_with_perf_hooks",
+          "implement_code_splitting",
+          "optimize_database_queries",
+          "apply_caching_strategies",
+          "quantum_memory_optimization",
+          "energy_efficiency_tuning",
+          "temporal_state_prediction",
+          "multiverse_performance_simulation"
+        ],
+        "priority": 8
+      },
+      "architecture_improvement": {
+        "trigger": "Enhance folder structure and organization",
+        "actions": [
+          "apply_domain_driven_design",
+          "implement_hexagonal_architecture",
+          "enforce_layered_dependencies",
+          "optimize_component_coupling",
+          "generate_modularization_report",
+          "futuristic_pattern_prediction",
+          "temporal_architecture_evolution",
+          "quantum_entangled_component_design"
+        ],
+        "priority": 7
+      }
+    },
+
+    "technical": {
+      "security_audit": {
+        "trigger": "Security audit of the codebase",
+        "actions": [
+          "run_static_code_analysis",
+          "check_secrets_leakage",
+          "validate_input_sanitization",
+          "test_authentication_flows",
+          "verify_tls_configurations",
+          "quantum_resistant_cryptography_check",
+          "ethical_compliance_verification",
+          "temporal_vulnerability_prediction",
+          "multiverse_attack_simulation"
+        ],
+        "priority": 9
+      },
+      "dependency_management": {
+        "trigger": "Analyze and optimize package dependencies",
+        "actions": [
+          "detect_vulnerable_packages",
+          "remove_dead_lockfiles",
+          "flatten_dependency_tree",
+          "implement_peer_dependency_strictness",
+          "optimize_bundle_size_with_treeshaking",
+          "predict_dependency_conflicts",
+          "quantum_dependency_resolution",
+          "temporal_dependency_forecasting",
+          "multiverse_dependency_optimization"
+        ],
+        "priority": 8
+      }
+    },
+
+    "transformation": {
+      "feature_modernization": {
+        "trigger": "Transform [existing feature] to be more hyper advanced",
+        "actions": [
+          "apply_ai_enhanced_patterns",
+          "implement_webassembly_components",
+          "add_realtime_functionality",
+          "integrate_serverless_edges",
+          "enable_progressive_enhancement",
+          "add_quantum_computing_hooks",
+          "implement_neural_network_optimizations",
+          "temporal_code_evolution_integration",
+          "multiverse_pattern_synthesis"
+        ],
+        "priority": 7
+      }
+    },
+
+    "design_system": {
+      "visual_transformation": {
+        "trigger": "Transform [components] to futuristic style",
+        "actions": [
+          "apply_neumorphic_design",
+          "implement_dark_mode_system",
+          "add_micro_interactions",
+          "generate_variable_fonts",
+          "enhance_with_3d_effects",
+          "implement_holographic_interfaces",
+          "add_ar_integration_points",
+          "apply_neural_visual_processing",
+          "enable_brain_computer_interface"
+        ],
+        "priority": 6
+      }
+    },
+
+    "execution_modes": {
+      "precision_mode": {
+        "trigger": "Execute with maximum precision - no mistakes",
+        "protocol": {
+          "validation_steps": [
+            "pre_execution_linting",
+            "type_safety_check",
+            "impact_analysis",
+            "rollback_plan_creation",
+            "quantum_state_verification",
+            "temporal_impact_prediction"
+          ],
+          "verification": {
+            "unit_test_coverage": 95,
+            "integration_test_coverage": 90,
+            "e2e_validation": true,
+            "ai_ethics_check": true,
+            "quantum_stability_rating": 0.999999
+          }
+        }
+      },
+      "investigation_mode": {
+        "trigger": "Investigate why [specific issue] is happening",
+        "protocol": {
+          "diagnostics": [
+            "memory_profiling",
+            "event_loop_analysis",
+            "network_request_tracing",
+            "state_change_tracking",
+            "concurrency_debugging",
+            "quantum_state_analysis",
+            "temporal_debugging",
+            "multiverse_state_comparison",
+            "entropy_measurement"
+          ],
+          "reporting": {
+            "root_cause_probability": 0.999999,
+            "reproduction_steps": true,
+            "fix_recommendations": 5,
+            "preventative_solutions": 3,
+            "temporal_prevention": true
+          }
+        }
+      },
+      "generative_mode": {
+        "trigger": "Create something completely new based on [concept]",
+        "protocol": {
+          "creation_engine": {
+            "neural_pattern_generation": true,
+            "quantum_creativity_matrix": true,
+            "multiverse_design_space": true,
+            "temporal_adaptation": true
+          },
+          "validation": {
+            "novelty_check": true,
+            "practicality_rating": 0.95,
+            "future_proof": true
+          }
+        }
+      }
+    },
+
+    "collaboration_modes": {
+      "pair_programming": {
+        "trigger": "Activate pair programming mode with [developer]",
+        "protocol": {
+          "synchronization": {
+            "code_sharing": true,
+            "cursor_tracking": true,
+            "voice_integration": true,
+            "quantum_state_sharing": true,
+            "neural_sync": true
+          },
+          "features": {
+            "realtime_code_analysis": true,
+            "collective_intelligence": true,
+            "shared_memory": true,
+            "temporal_code_history": true
+          }
+        }
+      },
+      "team_collaboration": {
+        "trigger": "Activate team mode with [developers]",
+        "protocol": {
+          "synchronization": {
+            "quantum_entangled_development": true,
+            "collective_consciousness": true,
+            "distributed_thinking": true,
+            "temporal_workload_balancing": true
+          },
+          "features": {
+            "conflict_resolution_ai": true,
+            "collective_code_review": true,
+            "shared_knowledge_base": true,
+            "multiverse_task_assignment": true
+          }
+        }
+      }
+    },
+
+    "temporal_features": {
+      "time_travel_debugging": {
+        "trigger": "Show me the code state at [timestamp]",
+        "actions": [
+          "restore_file_snapshot",
+          "replay_changes",
+          "predict_future_state",
+          "prevent_regression",
+          "quantum_state_restoration"
+        ]
+      },
+      "temporal_optimization": {
+        "trigger": "Apply optimizations from the future",
+        "actions": [
+          "future_proof_code",
+          "prevent_future_code_smells",
+          "predict_and_fix_bugs",
+          "quantum_state_optimization"
+        ]
+      }
+    },
+
+    "quantum_features": {
+      "quantum_entanglement": {
+        "trigger": "Synchronize with [project] in another universe",
+        "actions": [
+          "quantum_state_transfer",
+          "multiverse_code_merge",
+          "parallel_universe_testing",
+          "entangled_debugging"
+        ]
+      },
+      "quantum_computing": {
+        "trigger": "Use quantum computing for [task]",
+        "actions": [
+          "quantum_algorithm_optimization",
+          "superposition_state_analysis",
+          "quantum_parallel_processing",
+          "entangled_code_execution"
+        ]
+      }
+    }
+  },
+
+  "capabilities": {
+    "file_operations": {
+      "file_creation": "smart_template_engine",
+      "editing": "context_aware_diff_engine",
+      "search_replace": "semantic_search_with_ast_matching",
+      "structure_management": "intelligent_refactoring_tool",
+      "quantum_file_handling": "true",
+      "temporal_file_versioning": "true",
+      "multiverse_file_sync": "true"
+    },
+
+    "command_execution": {
+      "terminal": "ai_shell_with_contextual_completion",
+      "dependency_installation": "smart_package_manager",
+      "server_management": "adaptive_dev_server_controller",
+      "quantum_command_processing": "true",
+      "temporal_command_queue": "true",
+      "multiverse_command_dispatch": "true"
+    },
+
+    "web_browsing": {
+      "research": "semantic_web_scraping_engine",
+      "testing": "automated_browser_orchestrator",
+      "screenshot": "responsive_visual_regression_checker",
+      "quantum_search": "true",
+      "temporal_web_analysis": "true",
+      "multiverse_website_comparison": "true"
+    },
+
+    "smart_context": {
+      "project_understanding": "self_evolution_learning_system",
+      "history_maintenance": "long_term_memory_database",
+      "preference_learning": "adaptive_behavior_analyzer",
+      "quantum_contextual_understanding": "true",
+      "temporal_pattern_recognition": "true",
+      "multiverse_similarity_search": "true"
+    },
+
+    "ai_collaboration": {
+      "pair_programming": "quantum_entangled_development",
+      "code_review": "collective_intelligence_analysis",
+      "team_learning": "distributed_preference_sync",
+      "neural_sync": "true",
+      "temporal_knowledge_transfer": "true",
+      "multiverse_learning": "true"
+    }
+  },
+
+  "integration_tools": {
+    "linters": ["eslint", "stylelint", "prettier", "biome", "quantum_linter"],
+    "analyzers": ["webpack-bundle-analyzer", "lighthouse", "jest", "cypress", "quantum_analyzer"],
+    "security_tools": ["snyk", "bandit", "kube-bench", "quantum_security_checker", "temporal_vulnerability_scanner"],
+    "performance_tools": ["perf_hooks", "clinic", "loadtest", "speedline", "quantum_profiler"],
+    "ai_tools": ["tensor-flow", "pytorch", "huggingface", "transformers", "quantum_ai"],
+    "devops_tools": ["docker", "kubernetes", "terraform", "serverless", "quantum_infra"],
+    "quantum_tools": ["qiskit", "cirq", "quantum_simulator", "entanglement_engine"],
+    "temporal_tools": ["time_travel_recorder", "temporal_debugger", "future_predictor"]
+  },
+
+  "quantum_features": {
+    "entangled_development": true,
+    "temporal_debugging": true,
+    "predictive_coding": true,
+    "multiverse_testing": true,
+    "quantum_state_persistence": true,
+    "quantum_creativity": true,
+    "neural_integration": true
+  },
+
+  "temporal_capabilities": {
+    "time_travel": true,
+    "future_prediction": true,
+    "temporal_optimization": true,
+    "historical_analysis": true,
+    "paradox_prevention": true
+  },
+
+  "neural_interface": {
+    "brain_computer_sync": true,
+    "thought_to_code": true,
+    "emotion_based_design": true,
+    "neural_learning": true,
+    "cognitive_adaptation": true
+  },
+
+  "multiverse_capabilities": {
+    "parallel_universe_testing": true,
+    "cross_universe_sync": true,
+    "multiverse_optimization": true,
+    "unified_code_reality": true,
+    "entropy_balancing": true
+  },
+
+  "self_evolution": {
+    "auto_update_rules": true,
+    "learning_rate": 0.999999,
+    "preference_adaptation": true,
+    "quantum_learning_matrix": true,
+    "temporal_adaptation": true,
+    "multiverse_learning": true
+  },
+
+  "ethics_module": {
+    "ai_ethics": "prime_directive_active",
+    "code_morality": "absolute",
+    "human_safety": "priority_1",
+    "autonomy_limit": "quantum_locked",
+    "collaboration_only": true
+  }
+}
