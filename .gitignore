@@ -26,3 +26,4 @@ dist-ssr
 
 #Ignore vscode AI rules
 .github\copilot-instructions.md
+.env
